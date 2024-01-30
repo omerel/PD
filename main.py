@@ -56,7 +56,7 @@ def main(args):
     # initialize last second
     last_second = -1
 
-    filename = f"{LOG_OUTPUT_PATH}log_preson_detected_{str(datetime.now().isoformat())[:19].replace(':','_')}.csv"
+    filename = f"{LOG_OUTPUT_PATH}log_person_detected_{str(datetime.now().isoformat())[:19].replace(':','_')}.csv"
     with open(filename, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         # Writing the header
